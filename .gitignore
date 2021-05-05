@@ -1,8 +1,8 @@
-metadata
+.metadata
 RemoteSystemsTempFiles
 mudi.zip
-mvn
-settings
+.mvn
+.settings
 target
 .classpath
 .project
