@@ -19,7 +19,7 @@ public class HomeController {
 		pedido.setUrlImagem("https://images-na.ssl-images-amazon.com/images/I/51kB1ByCiNS._AC_SL1000_.jpg");
 		pedido.setDescricao("Descrição do produto Xiaomi Redmi Note 9");
 		
-		List<Pedido> pedidos = Arrays.asList(pedido);
+		List<Pedido> pedidos = Arrays.asList(pedido, pedido, pedido);
 		model.addAttribute("pedidos", pedidos);
 		
 		return "home";
