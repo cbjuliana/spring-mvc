@@ -3,7 +3,18 @@ package org.example.mudi.model;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import net.bytebuddy.implementation.bytecode.assign.reference.GenericTypeAwareAssigner;
+
+@Entity
 public class Pedido {
+	
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	
 	private String nomeProduto;
 	
@@ -63,6 +74,14 @@ public class Pedido {
 
 	public void setUrlImagem(String urlImagem) {
 		this.urlImagem = urlImagem;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	
